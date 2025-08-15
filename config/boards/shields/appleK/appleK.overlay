@@ -16,11 +16,11 @@
             = <&pro_micro 4 GPIO_ACTIVE_HIGH>
             , <&pro_micro 5 GPIO_ACTIVE_HIGH>;
          };
+    default_transform: maxtrix_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <2>; // Length of the "col-gpios" array
+        rows = <2>; // Length of the "row-gpios" array
 
-        default_transform: maxtrix_transform0 {
-            compatible = "zmk,matrix-transform";
-            columns = <2>; // Length of the "col-gpios" array
-            rows = <2>; // Length of the "row-gpios" array
         map = <
         //   Key 1 | Key 2 
             RC(0,0) RC(0,1) 

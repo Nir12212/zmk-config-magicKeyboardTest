@@ -1,7 +1,7 @@
-if SHIELD_magicKeyboardTest
+if SHIELD_APPLEK
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "magicKeyboardTest"
+    default "appleK"
 
 endif

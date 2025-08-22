@@ -1,0 +1,9 @@
+file_format: "1"
+id: ny
+name: NY Custom Shield
+type: shield
+url: https://github.com/Nir12212/zmk-config-magicKeyboardTest
+requires:
+  - nice_nano_v2
+features:
+  - keys

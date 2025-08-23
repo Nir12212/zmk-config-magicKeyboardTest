@@ -1,7 +1,7 @@
-if SHIELD_NYDONGLE
+if SHIELD_NY_DONGLE
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "nyDongle"
+    default "ny_dongle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y

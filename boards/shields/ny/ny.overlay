@@ -5,7 +5,18 @@
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
     };
-
+    &i2c0 {
+        status = "okay";
+    
+        mcp: mcp23017@20 {
+            compatible = "microchip,mcp23017";
+            reg = <0x20>;
+            gpio-controller;
+            #gpio-cells = <2>;
+            ngpios = <16>;
+            status = "okay";
+        };
+    };
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <2>;
@@ -33,16 +44,3 @@
     };
 };
 
-/* MCP23017 node on I2C bus */
-    &i2c0 {
-        status = "okay";
-    
-        mcp: mcp23017@20 {
-            compatible = "microchip,mcp23017";
-            reg = <0x20>;                /* I²C address (A0-A2 = GND) */
-            gpio-controller;
-            #gpio-cells = <2>;
-            ngpios = <16>;
-            status = "okay";
-        };
-};

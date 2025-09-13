@@ -34,15 +34,15 @@
 };
 
 /* MCP23017 node on I2C bus */
-&i2c0 {
-    status = "okay";
-
-    mcp: mcp23017@20 {
-        compatible = "microchip,mcp23017";
-        reg = <0x20>;                /* I²C address (A0-A2 = GND) */
-        gpio-controller;
-        #gpio-cells = <2>;
-        ngpios = <16>;
+    &i2c0 {
         status = "okay";
-    };
+    
+        mcp: mcp23017@20 {
+            compatible = "microchip,mcp23017";
+            reg = <0x20>;                /* I²C address (A0-A2 = GND) */
+            gpio-controller;
+            #gpio-cells = <2>;
+            ngpios = <16>;
+            status = "okay";
+        };
 };

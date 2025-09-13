@@ -34,13 +34,13 @@
 
         /* Columns now come from MCP23017 expander */
         col-gpios =
-            <&mcp 8 (GPIO_ACTIVE_LOW| GPIO_PULL_UP)>,
-            <&mcp 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+            <&mcp 8 (GPIO_ACTIVE_LOW| GPIO_PULL_UP),
+            &mcp 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
         /* Rows still come from Pro Micro GPIOs */
         row-gpios =
-            <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN),
+            &pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 };
 

@@ -8,8 +8,8 @@
         default_layer { // Layer 0
 
             bindings = <
-                &kp Z  , &kp A
-                &kp S,  &kp K                 
+                &kp Z  &kp A
+                &kp S  &kp K                 
 
             >;
         };

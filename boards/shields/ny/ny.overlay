@@ -6,7 +6,7 @@
         zmk,matrix_transform = &default_transform;
     };
 
-    &i2c0 {
+    i2c0 {
         status = "okay";
 
         mcp: mcp23017@20 {

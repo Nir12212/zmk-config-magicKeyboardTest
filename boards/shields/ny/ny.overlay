@@ -30,8 +30,8 @@
 
         /* Rows still come from Pro Micro GPIOs */
         row-gpios
-            = <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            ,<&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ,<&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 };

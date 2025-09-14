@@ -24,8 +24,8 @@
 
         /* Columns now come from MCP23017 expander */
         col-gpios
-            = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
-            ,<&pro_micro 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
+            = <&ext 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
+            ,<&ext 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
             ;
 
         /* Rows still come from Pro Micro GPIOs */
@@ -33,5 +33,18 @@
             = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ,<&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
+    };
+};
+&&i2c0 {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+
+    ext: mcp23017@20 {
+        compatible = "microchip,mcp230xx";
+        reg = <0x20>;
+        gpio-controller;
+        #gpio-cells = <2>;
+        ngpios = <16>;
+        status = "okay";
     };
 };

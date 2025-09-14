@@ -24,8 +24,8 @@
 
         /* Columns now come from MCP23017 expander */
         col-gpios
-            = <&ext 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
-            ,<&ext 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
+            = <&ext 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP) >
+            ,<&ext 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP) >
             ;
 
         /* Rows still come from Pro Micro GPIOs */
@@ -35,7 +35,7 @@
             ;
     };
 };
-&i2c {
+&i2c0 {
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
 

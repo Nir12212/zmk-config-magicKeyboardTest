@@ -46,5 +46,6 @@
         #gpio-cells = <2>;
         ngpios = <16>;
         status = "okay";
+        int-gpios = <&pro_micro 15 GPIO_ACTIVE_LOW> ;
     };
 };

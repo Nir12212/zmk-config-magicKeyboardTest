@@ -4,6 +4,6 @@ name: NY Custom Shield
 type: shield
 url: https://github.com/Nir12212/zmk-config-magicKeyboardTest
 requires:
-  - arduino_nano_33_ble
+  - nice_nano_v2
 features:
   - keys

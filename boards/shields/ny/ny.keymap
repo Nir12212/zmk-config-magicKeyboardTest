@@ -8,8 +8,8 @@
         default_layer { // Layer 0
 
             bindings = <
-                &kp ESC &kp F1 &kp GRAVE &kp N1 &kp TAB &kp Q &kp CAPSLOCK &kp A &kp LSHIFT &kp Z 
-                &kp F2  &kp F3 &kp N2 &kp N3 &kp W &kp E &kp S &kp D &kp X &kp C 
+                &kp ESC &kp F1 &kp GRAVE &kp N1 &kp TAB &kp Q &kp CAPSLOCK &kp A &kp LSHIFT &kp Z &kp G &kp K &kp N3 &kp N4
+                
 
 
                 

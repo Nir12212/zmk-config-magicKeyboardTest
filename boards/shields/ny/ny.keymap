@@ -9,8 +9,9 @@
 
             bindings = <
                 &kp A
-                &kp B
-                 
+                &kp F1
+
+
                 
 
             >;

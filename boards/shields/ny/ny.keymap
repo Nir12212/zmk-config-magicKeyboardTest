@@ -8,7 +8,35 @@
         default_layer { // Layer 0
 
             bindings = <
-                &kp ESC &kp F1 &kp GRAVE &kp N1 &kp TAB &kp Q &kp CAPSLOCK &kp A &kp LSHIFT &kp Z &kp G &kp K &kp N3 &kp N4
+                /* Row 0 */
+                &kp ESC   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7
+
+                /* Row 1 */
+                &kp GRAVE &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7
+
+                /* Row 2 */
+                &kp TAB   &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U
+
+                /* Row 3 */
+                &kp CAPS  &kp A   &kp S   &kp D   &kp F   &kp G   &kp H   &kp J
+
+                /* Row 4 */
+                &kp LSHFT &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N   &kp M
+
+                /* Row 5 */
+                &kp LCTL  &kp LGUI &kp LALT &kp SPACE &kp SPACE &kp RALT &kp RGUI &kp RCTL
+
+                /* Row 6 */
+                &kp F8    &kp F9  &kp F10 &kp F11 &kp F12 &kp INS  &kp DEL  &kp BSPC
+
+                /* Row 7 */
+                &kp P7    &kp P8  &kp P9  &kp PMINUS &kp P4 &kp P5 &kp P6 &kp PPLUS
+
+                /* Row 8 */
+                &kp LEFT  &kp DOWN &kp UP &kp RIGHT &kp HOME &kp END &kp PG_UP &kp PG_DN
+
+                /* Row 9 */
+                &kp ENTER &kp ENTER &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
                 
 
 

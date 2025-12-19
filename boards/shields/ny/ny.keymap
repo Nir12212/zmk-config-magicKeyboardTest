@@ -8,8 +8,12 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp A       &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp V
-                &kp P &kp O &kp Y &kp Z &kp X &kp Q &kp W &kp R &kp T &kp J &kp K &kp L &kp M &kp N 
+                &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N
+                &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X &kp Y &kp Z &kp A &kp B
+                &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O &kp P
+                &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X &kp Y &kp Z &kp A &kp B &kp C
+                &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O
+                &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W 
 
             >;
         };

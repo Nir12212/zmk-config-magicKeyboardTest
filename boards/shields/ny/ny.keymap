@@ -5,7 +5,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        /* ================= BASE ================= */
+        /* ============== BASE ============== */
         default_layer {
             display-name = "Base";
             bindings = <
@@ -18,7 +18,7 @@
             >;
         };
 
-        /* ================= FN / BLE ================= */
+        /* ============== FN / BLE ============== */
         fn_layer {
             display-name = "Fn";
             bindings = <
@@ -27,7 +27,7 @@
                 &none &none &none &none &none &none &none &none &none &none &none &none &none &none
                 &none &none &none &none &none &none &none &none &none &none &none &none &none
                 &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &none &none &none &none &none
+                &none &none &none &none &battery BATTERY &none &none &none
             >;
         };
     };
